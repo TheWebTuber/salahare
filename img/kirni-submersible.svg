@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="740" viewBox="0 0 720 740" role="img" aria-label="Narwhal-like starship under the sea">
+<defs><radialGradient id="bg"><stop stop-color="#1a6c77"/><stop offset=".55" stop-color="#0b3c51"/><stop offset="1" stop-color="#092327"/></radialGradient><linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8b8ff"/><stop offset=".45" stop-color="#4e8098"/><stop offset="1" stop-color="#2a324b"/></linearGradient><linearGradient id="fin" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#90c2e7"/><stop offset="1" stop-color="#0b5351"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="15"/></filter></defs>
+<rect width="720" height="740" fill="url(#bg)"/>
+<g opacity=".36" stroke="#90c2e7" fill="none"><circle cx="363" cy="315" r="240" stroke-dasharray="3 14"/><circle cx="363" cy="315" r="187" stroke-dasharray="8 19"/><circle cx="363" cy="315" r="110"/></g>
+<g fill="#ffeedD"><circle cx="80" cy="90" r="3"/><circle cx="580" cy="85" r="2"/><circle cx="641" cy="232" r="3"/><circle cx="120" cy="492" r="2"/><circle cx="600" cy="552" r="3"/><circle cx="455" cy="68" r="2"/><circle cx="309" cy="90" r="2"/><circle cx="255" cy="616" r="3"/></g>
+<g stroke="#c7ccdb" stroke-width="2" stroke-linecap="round"><path d="M137 184v18M128 193h18M581 374v20M571 384h20M505 576v17M496 584h18"/></g>
+<path d="M60 614C163 557 202 617 292 612S481 578 658 637" fill="none" stroke="#00a9a5" stroke-width="3" opacity=".45"/>
+<circle cx="357" cy="343" r="153" fill="#00a9a5" opacity=".22" filter="url(#glow)"/>
+<!-- narwhal / submarine hull -->
+<path d="M177 328Q185 228 309 205Q441 185 528 268Q570 307 528 391Q463 470 314 444Q201 428 177 328Z" fill="url(#shell)" stroke="#90c2e7" stroke-width="8"/>
+<path d="M225 273Q339 214 459 265" fill="none" stroke="#f8f7ff" stroke-width="8" opacity=".6" stroke-linecap="round"/>
+<path d="M272 224Q237 160 263 124Q299 151 319 205" fill="#9381ff" stroke="#b8b8ff" stroke-width="7"/>
+<path d="M501 323Q583 258 632 308Q592 353 509 377" fill="url(#fin)" stroke="#90c2e7" stroke-width="7"/>
+<path d="M351 213L370 77L387 218Z" fill="#f7c59f" stroke="#ffeedD" stroke-width="7" stroke-linejoin="round"/>
+<path d="M249 416L196 478L310 444Z" fill="url(#fin)" stroke="#90c2e7" stroke-width="7"/>
+<path d="M410 438L465 493L464 428Z" fill="#9381ff" stroke="#b8b8ff" stroke-width="7"/>
+<circle cx="338" cy="331" r="71" fill="#092327" stroke="#ffeedD" stroke-width="9"/>
+<circle cx="338" cy="331" r="55" fill="#0b5351" stroke="#90c2e7" stroke-width="3"/>
+<path d="M302 352Q315 317 333 329T373 302" fill="none" stroke="#b8b8ff" stroke-width="5" stroke-linecap="round"/>
+<circle cx="318" cy="304" r="6" fill="#ffeedD"/><circle cx="351" cy="296" r="5" fill="#ffeedD"/>
+<path d="M455 310h47M460 328h45M465 346h30" stroke="#ffeedD" stroke-width="5" opacity=".6" stroke-linecap="round"/>
+<path d="M188 305Q147 307 145 334Q149 362 193 364" fill="#00a9a5" stroke="#90c2e7" stroke-width="7"/>
+<g fill="none" stroke="#90c2e7" opacity=".6"><circle cx="115" cy="325" r="7"/><circle cx="98" cy="278" r="12"/><circle cx="116" cy="240" r="4"/><circle cx="567" cy="464" r="6"/><circle cx="606" cy="505" r="12"/><circle cx="579" cy="549" r="4"/></g>
+<g font-family="monospace" fill="#90c2e7" font-size="15" letter-spacing="2"><text x="55" y="52">DEEP SEA / OUTER ORBIT</text><text x="456" y="690">SIGNAL: KIRNI</text></g>
+</svg>
