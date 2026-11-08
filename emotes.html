@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082c33">
+  <meta name="description" content="Sal's Emote Cove — discover animated GIFs and reactions by Salahare (Orca), preview favourites, and copy direct image links.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sal's Emote Cove ✧ Salahare">
+  <meta property="og:description" content="A little collection of magic from the deep. Browse and share Sal's emotes.">
+  <meta property="og:image" content="https://salahare.creatorpromote.com/img/salahare-original.png">
+  <meta property="og:url" content="https://salahare.creatorpromote.com/emotes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Sal's Emote Cove ✧ Salahare</title>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,650;9..144,750&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/emotes.css">
+  <script src="/js/emotes.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to emotes</a>
+  <div class="ocean-pattern" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav-shell wrap" aria-label="Main navigation">
+      <a href="/" class="brand"><span class="brand-mark" aria-hidden="true">✧</span><span><strong>SALAHARE</strong><small>BELOW THE STARLIT SEA</small></span></a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="primary-nav"><a href="/">Home</a><a href="/#about">Meet Sal</a><a href="/#streams">Livestreams</a><a href="/emotes.html" aria-current="page">Emotes</a><a class="nav-cta" href="/">Back to the surface <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-text"><p class="eyebrow"><span class="dot"></span> ANOTHER LITTLE TREASURE FROM THE DEEP</p><h1 id="hero-title">Sal's <em>emote cove.</em></h1><p class="hero-sub">Little expressions, big feelings. Swim through Sal's emotes, pick a favourite, and copy its direct link to share. No sign-in or form needed.</p><div class="hero-links"><a class="btn btn-peach" href="#gallery-section">Explore emotes <span aria-hidden="true">↓</span></a><a class="text-link" href="/">← Return to Sal's homepage</a></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="outer-ring"></div><div class="moonlight">✧</div><div class="big-orca">🐋</div><div class="tiny-stars">✦ &nbsp; ✧ &nbsp; ✶</div><div class="art-note">SOMEWHERE BELOW THE STARS</div></div>
+    </section>
+    <div class="wave-divider" aria-hidden="true"></div>
+    <section class="gallery-section" id="gallery-section" aria-labelledby="gallery-heading"><div class="wrap">
+      <div class="gallery-heading"><div><p class="section-index">01 — THE COLLECTION</p><h2 id="gallery-heading">Find your <em>reaction.</em></h2><p id="gallery-count" class="gallery-count" aria-live="polite">Loading emotes…</p></div><div class="heading-sparkle" aria-hidden="true">✦ ✧ ✦</div></div>
+      <div class="toolbar"><label class="searchbox"><span class="sr-only">Search emotes by filename</span><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search an emote…" autocomplete="off"></label>
+      <label class="sortbox"><span>Sort</span><select id="sort"><option value="az">A → Z</option><option value="za">Z → A</option><option value="newest">Newest file</option></select></label>
+      <button type="button" id="refresh" class="btn btn-outline" title="Reload the emotes.json file">↻ Refresh</button></div>
+      <div class="filters" role="group" aria-label="Filter emotes"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All emotes</button><button type="button" class="filter" data-filter="animated" aria-pressed="false">Animated GIFs</button><button type="button" class="filter" data-filter="static" aria-pressed="false">Images</button></div>
+      <p id="status" class="status" role="status">Searching the cove for emotes…</p>
+      <div id="gallery" class="emote-grid"></div>
+      <div id="empty" class="empty" hidden><span aria-hidden="true">✧</span><h3 id="empty-title">No emotes to show yet</h3><p id="empty-desc">Once the images are uploaded and emotes.json is updated, they'll appear here automatically.</p><button type="button" id="clear-filters" class="btn btn-peach">Clear filters</button></div>
+    </div></section>
+    <section class="howto wrap"><span class="howto-icon" aria-hidden="true">✦</span><div><h2>How to share the magic</h2><p>Tap a picture to see it larger, or choose <strong>Copy link</strong> to copy the direct GIF/image URL. Send that link to a friend, or use it anywhere direct image links are supported.</p></div></section>
+  </main>
+  <dialog id="preview" class="preview-dialog" aria-label="Emote preview"><button class="preview-close" id="preview-close" type="button" aria-label="Close preview">×</button><div class="preview-body"><img id="preview-img" alt="" src=""><p id="preview-name"></p><small id="preview-filename"></small><div class="preview-actions"><button type="button" id="preview-copy" class="btn btn-peach">Copy link</button><a id="preview-open" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">Open image ↗</a></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><a class="footer-brand" href="/">✧ SALAHARE</a><p>Little treasures from below the starlit sea.</p><small>Emote artwork remains the property of its respective creator(s).</small></div><div class="footer-links"><a href="/">Home</a><a href="/emotes.html">Emotes</a><a href="https://www.youtube.com/@Salahare" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div><div class="wrap credit">Unofficial creator site · Maintained with care by <a href="https://www.youtube.com/@PMOG" target="_blank" rel="noopener noreferrer">Portal Master Of Games</a>.</div></footer>
+</body>
+</html>

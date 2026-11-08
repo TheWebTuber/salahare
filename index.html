@@ -1,102 +1,435 @@
 <!doctype html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#092327">
-  <meta name="description" content="Meet Salahare (Sal): artist, mech enthusiast and story-loving Dream Drops Crew creator. Dive into an underwater world of stars, spaceships and recent YouTube livestreams.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Salahare · Below the Starlit Sea">
-  <meta property="og:description" content="Art, mechs, stories and deep-sea starships. Welcome to Sal's little world beneath the stars.">
-  <meta property="og:image" content="img/salahare-original.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Salahare — Below the Starlit Sea</title>
-  <link rel="icon" type="image/png" sizes="256x256" href="img/favicon.png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,650;9..144,750&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/youtube-config.js"></script>
-  <script defer src="js/site.js"></script>
-  <script defer src="js/youtube.js"></script>
-</head>
-<body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <div class="ocean-overlay" aria-hidden="true"></div>
-  <header class="site-header" id="top">
-    <div class="nav-shell container">
-      <a href="#top" class="brand" aria-label="Salahare, homepage"><span class="brand-mark" aria-hidden="true">✧</span><span class="brand-name">SALAHARE <small>BELOW THE STARLIT SEA</small></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
-      <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
-        <a href="#about">Meet Sal</a><a href="#lore">The story</a><a href="#streams">Livestreams</a><a href="#links">Find Sal</a>
-        <a class="nav-cta" href="https://www.youtube.com/@Salahare" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="bubble-stream bubble-stream-left" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <div class="bubble-stream bubble-stream-right" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="pulse-dot"></span> TRANSMISSION RECEIVED / CHANNEL SAL</p>
-          <h1 id="hero-title">A little <em>magic</em><br>beneath the <span class="sea-word">sea.</span></h1>
-          <p class="hero-subtitle">Hi, I'm <strong>Sal — Salahare.</strong> I love bringing ideas to life through art, stories, games and a healthy dose of giant mechs. Come explore a sea of possibilities with me.</p>
-          <div class="hero-actions"><a href="#about" class="btn btn-light">Come aboard <span aria-hidden="true">↗</span></a><a href="#streams" class="btn btn-ghost">Watch the streams <span aria-hidden="true">↘</span></a></div>
-          <div class="hero-tags"><span>✦ Artist</span><span>⚙ Mech enthusiast</span><span>✧ Dream Drops Crew</span></div>
-        </div>
-        <div class="hero-scene">
-          <div class="portal-ring portal-ring-outer"></div><div class="portal-ring portal-ring-inner"></div>
-          <div class="portal-halo"></div><div class="portal-ocean"></div>
-          <div class="portal-frame"><img class="hero-portrait" src="img/salahare-cutout.png" alt="Salahare's blue-haired avatar wearing glasses" fetchpriority="high"><span class="portrait-shimmer" aria-hidden="true"></span></div>
-          <div class="hero-scene-caption"><span class="signal-icon" aria-hidden="true">✳</span> <span>THE CAPTAIN <strong>SAL / SALAHARE</strong></span></div>
-          <div class="floating-label ship-label">VESSEL KIRNI <span>↗</span></div>
-          <div class="floating-label depth-label">DEPTH: BETWEEN WORLDS</div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#092327" name="theme-color" />
+    <meta
+      content="Meet Salahare (Sal): artist, mech enthusiast and story-loving Dream Drops Crew creator. Dive into an underwater world of stars, spaceships and recent YouTube livestreams."
+      name="description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="Salahare · Below the Starlit Sea" property="og:title" />
+    <meta
+      content="Art, mechs, stories and deep-sea starships. Welcome to Sal's little world beneath the stars."
+      property="og:description"
+    />
+    <meta
+      content="https://salahare.creatorpromote.com/img/salahare-original.png"
+      property="og:image"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <title>Salahare — Below the Starlit Sea</title>
+    <link href="img/favicon.png" rel="icon" sizes="256x256" type="image/png" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,650;9..144,750&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script defer="" src="js/youtube-config.js"></script>
+    <script defer="" src="js/site.js"></script>
+    <script defer="" src="js/youtube.js"></script>
+    <style></style>
+    <meta content="https://salahare.creatorpromote.com" property="og:url" />
+    <meta
+      content="https://salahare.creatorpromote.com/img/salahare-original.png"
+      name="twitter:image"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div aria-hidden="true" class="ocean-overlay"></div>
+    <header class="site-header" id="top">
+      <div class="nav-shell container">
+        <a aria-label="Salahare, homepage" class="brand" href="#top"
+          ><span aria-hidden="true" class="brand-mark">✧</span
+          ><span class="brand-name"
+            >SALAHARE <small>BELOW THE STARLIT SEA</small></span
+          ></a
+        >
+        <button
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          class="nav-toggle"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main navigation" class="nav-links" id="primary-nav">
+          <a href="#about">Meet Sal</a><a href="#lore">The story</a
+          ><a href="#streams">Livestreams</a><a href="/emotes.html">Emotes</a
+          ><a href="#links">Find Sal</a>
+          <a
+            class="nav-cta"
+            href="https://www.youtube.com/@Salahare"
+            rel="noopener noreferrer"
+            target="_blank"
+            >YouTube <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
-      <div class="hero-bottom"><div class="container hero-bottom-inner"><span><b>01</b> THE DIVING LOG</span><span class="scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span><span>✦ OCEAN / ORBIT ✦</span></div></div>
-    </section>
-
-    <section class="intro-section" id="about">
-      <div class="wave wave-intro" aria-hidden="true"></div>
-      <div class="container intro-shell">
-        <div class="intro-left">
-          <span class="section-index">01 — A SMALL INTRODUCTION</span>
-          <h2>Meet the creator<br><em>behind the helm.</em></h2>
-          <p>Somewhere between the sketchbook and the stars, you'll find Sal.</p>
-          <div class="bio-portrait-frame"><img src="img/salahare-original.png" alt="Original portrait supplied for Salahare's profile" loading="lazy"><span class="bio-sticker">hello! <span aria-hidden="true">✳</span></span></div>
+    </header>
+    <main id="main">
+      <section aria-labelledby="hero-title" class="hero">
+        <div aria-hidden="true" class="hero-stars">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
-        <div class="intro-right"><div class="intro-note"><span class="note-label">PERSONAL LOG / ENTRY 001</span><h3>Art, stories and a little wonder.</h3><p>I'm Sal, and I enjoy making and exploring worlds: drawing, animation, big mechanical designs, story-rich games, and adventures with friends.</p><p>Sometimes it's a quiet creative session. Other times it turns into a Dream Drops Crew collaboration where absolutely anything can happen.</p><p>However you found your way here, you're welcome to stay awhile.</p><div class="interests"><span>Illustration</span><span>Animation</span><span>Mechs</span><span>Gaming</span><span>Storytelling</span></div><span class="signature">— Sal <span aria-hidden="true">✦</span></span></div></div>
-      </div>
-    </section>
-
-    <section class="lore-section" id="lore">
-      <div class="container lore-layout">
-        <div class="lore-visual"><div class="dive-graphic"><img src="img/kirni-submersible.svg" alt="Illustration of Kirni, an imagined narwhal-like spacecraft exploring the deep ocean"><div class="dive-graphic-label">KIRNI / EXPLORATION CLASS <span>✦</span></div></div><div class="radar-deco" aria-hidden="true"></div></div>
-        <div class="lore-copy"><span class="section-index light">02 — THE WORLDS WE MAKE</span><h2>When the ocean<br><em>meets outer space.</em></h2><p>In the Dream Drops Crew's shared tale, Sal's ship <strong>Kirni</strong> ends up crash-landing in JD's magical forest. Now imagine that same curious spirit taking the next expedition below the waves, where ancient wonders hide under distant stars.</p><p>This undersea voyage is a playful website theme, inspired by Sal's love of machines, imagination and the crew's story—not a claim about new story canon.</p><button type="button" id="mission-btn" class="btn btn-coral">Open the captain's log <span aria-hidden="true">✧</span></button><div class="mission-log" id="mission-log" role="status" aria-live="polite" hidden></div></div>
-      </div>
-    </section>
-
-    <section class="streams-section" id="streams">
-      <div class="container"><div class="section-heading streams-header"><div><span class="section-index">03 — LIVE FROM THE DEEP</span><h2>Latest <em>livestreams.</em></h2><p>Up to six of Sal's latest public YouTube livestreams, refreshed automatically when the API is connected.</p></div><button class="refresh-button" id="refresh-streams" type="button" title="Check YouTube for updates"><span aria-hidden="true">↻</span> Refresh feed</button></div>
-      <div class="stream-status-line"><span class="live-marker" aria-hidden="true"></span><span id="stream-status" role="status">Preparing the viewing deck…</span><span id="stream-updated"></span></div>
-      <div class="stream-grid" id="stream-grid"><div class="stream-placeholder"><span class="placeholder-icon">✦</span><h3>Opening the viewing deck</h3><p>Searching the starlit sea for stories…</p></div></div>
-      <div class="stream-footer"><span>WANT TO SEE EVERYTHING?</span><a href="https://www.youtube.com/@Salahare/streams" target="_blank" rel="noopener noreferrer">Explore all YouTube streams <span aria-hidden="true">↗</span></a></div></div>
-    </section>
-
-    <section class="links-section" id="links"><div class="container"><div class="links-heading"><span class="section-index">04 — KEEP IN TOUCH</span><h2>Come say <em>hello.</em></h2><p>Art, gaming and friends—here are the places to find Sal above the waves.</p></div>
-        <div class="links-layout"><div class="link-list">
-          <a class="creator-link" href="https://www.youtube.com/@Salahare" target="_blank" rel="noopener noreferrer"><span class="link-icon">▶</span><span><strong>YouTube</strong><small>Livestreams, VODs & adventures</small></span><b>↗</b></a>
-          <a class="creator-link" href="https://www.twitch.tv/salaharedrawstoo" target="_blank" rel="noopener noreferrer"><span class="link-icon">✧</span><span><strong>Twitch</strong><small>Find Sal's creative streams</small></span><b>↗</b></a>
-          <a class="creator-link" href="https://ko-fi.com/salahare" target="_blank" rel="noopener noreferrer"><span class="link-icon">♡</span><span><strong>Ko-fi</strong><small>Support Sal's artwork</small></span><b>↗</b></a>
-          <a class="creator-link" href="https://ko-fi.com/salahare/commissions" target="_blank" rel="noopener noreferrer"><span class="link-icon">✎</span><span><strong>Art commissions</strong><small>Check the current commission page</small></span><b>↗</b></a>
-          <a class="creator-link" href="https://www.youtube.com/@DreamDropsCrew" target="_blank" rel="noopener noreferrer"><span class="link-icon">✦</span><span><strong>Dream Drops Crew</strong><small>Adventures with the whole crew</small></span><b>↗</b></a>
+        <div aria-hidden="true" class="bubble-stream bubble-stream-left">
+          <i></i><i></i><i></i><i></i>
         </div>
-        <aside class="channel-card"><div class="channel-card-top"><span class="card-small-label">FROM THE YOUTUBE CHANNEL</span><img id="youtube-avatar" src="img/favicon.png" alt="YouTube channel profile picture, or the supplied avatar as fallback" loading="lazy"></div><h3>Sal's corner<br>of the internet.</h3><p>Connect on YouTube and explore whatever new worlds the crew dreams up next.</p><a href="https://www.youtube.com/@Salahare" target="_blank" rel="noopener noreferrer">@Salahare <span aria-hidden="true">↗</span></a><div class="extra-links" id="extra-links" hidden><p>MORE LINKS FROM CHANNEL DESCRIPTION</p><div id="extra-links-list"></div></div><span class="channel-card-star" aria-hidden="true">✧</span></aside></div>
-      </div></section>
-  </main>
-  <footer class="footer"><div class="container footer-row"><a href="#top" class="footer-brand"><span>✧</span> SALAHARE</a><p>An ocean of ideas, a sky full of stories. <br><small>Unofficial fan-made creator spotlight · Built with care by <a href="https://www.youtube.com/@PMOG" target="_blank" rel="noopener noreferrer">Portal Master Of Games</a>.</small></p><a class="back-top" href="#top">Back to surface ↑</a></div></footer>
-</body>
+        <div aria-hidden="true" class="bubble-stream bubble-stream-right">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="pulse-dot"></span> TRANSMISSION RECEIVED / CHANNEL
+              SAL
+            </p>
+            <h1 id="hero-title">
+              A little <em>magic</em><br />beneath the
+              <span class="sea-word">sea.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Hi, I'm <strong>Sal — Salahare.</strong> I love bringing ideas to
+              life through art, stories, games and a healthy dose of giant
+              mechs. Come explore a sea of possibilities with me.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="#about"
+                >Come aboard <span aria-hidden="true">↗</span></a
+              ><a class="btn btn-ghost" href="#streams"
+                >Watch the streams <span aria-hidden="true">↘</span></a
+              ><a class="btn btn-ghost" href="/emotes.html"
+                >Discover emotes <span aria-hidden="true">✦</span></a
+              >
+            </div>
+            <div class="hero-tags">
+              <span>✦ Artist</span><span>⚙ Mech enthusiast</span
+              ><span>✧ Dream Drops Crew</span>
+            </div>
+          </div>
+          <div class="hero-scene">
+            <div class="portal-ring portal-ring-outer"></div>
+            <div class="portal-ring portal-ring-inner"></div>
+            <div class="portal-halo"></div>
+            <div class="portal-ocean"></div>
+            <div class="portal-frame">
+              <img
+                alt="Salahare's blue-haired avatar wearing glasses"
+                class="hero-portrait"
+                fetchpriority="high"
+                src="img/salahare-cutout.png"
+              /><span aria-hidden="true" class="portrait-shimmer"></span>
+            </div>
+            <div class="hero-scene-caption">
+              <span aria-hidden="true" class="signal-icon">✳</span>
+              <span>THE CAPTAIN <strong>SAL / SALAHARE</strong></span>
+            </div>
+            <div class="floating-label ship-label">
+              VESSEL KIRNI <span>↗</span>
+            </div>
+            <div class="floating-label depth-label">DEPTH: BETWEEN WORLDS</div>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <div class="container hero-bottom-inner">
+            <span><b>01</b> THE DIVING LOG</span
+            ><span class="scroll-hint"
+              >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span
+            ><span>✦ OCEAN / ORBIT ✦</span>
+          </div>
+        </div>
+      </section>
+      <section class="intro-section" id="about">
+        <div aria-hidden="true" class="wave wave-intro"></div>
+        <div class="container intro-shell">
+          <div class="intro-left">
+            <span class="section-index">01 — A SMALL INTRODUCTION</span>
+            <h2>Meet the creator<br /><em>behind the helm.</em></h2>
+            <p>
+              Somewhere between the sketchbook and the stars, you'll find Sal.
+            </p>
+            <div class="bio-portrait-frame">
+              <img
+                alt="Original portrait supplied for Salahare's profile"
+                loading="lazy"
+                src="img/salahare-original.png"
+              /><span class="bio-sticker"
+                >hello! <span aria-hidden="true">✳</span></span
+              >
+            </div>
+          </div>
+          <div class="intro-right">
+            <div class="intro-note">
+              <span class="note-label">PERSONAL LOG / ENTRY 001</span>
+              <h3>Art, stories and a little wonder.</h3>
+              <p>
+                I'm Sal, and I enjoy making and exploring worlds: drawing,
+                animation, big mechanical designs, story-rich games, and
+                adventures with friends.
+              </p>
+              <p>
+                Sometimes it's a quiet creative session. Other times it turns
+                into a Dream Drops Crew collaboration where absolutely anything
+                can happen.
+              </p>
+              <p>
+                However you found your way here, you're welcome to stay awhile.
+              </p>
+              <div class="interests">
+                <span>Illustration</span><span>Animation</span><span>Mechs</span
+                ><span>Gaming</span><span>Storytelling</span>
+              </div>
+              <span class="signature"
+                >— Sal <span aria-hidden="true">✦</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lore-section" id="lore">
+        <div class="container lore-layout">
+          <div class="lore-visual">
+            <div class="dive-graphic">
+              <img
+                alt="Illustration of Kirni, an imagined narwhal-like spacecraft exploring the deep ocean"
+                src="img/kirni-submersible.svg"
+              />
+              <div class="dive-graphic-label">
+                KIRNI / EXPLORATION CLASS <span>✦</span>
+              </div>
+            </div>
+            <div aria-hidden="true" class="radar-deco"></div>
+          </div>
+          <div class="lore-copy">
+            <span class="section-index light">02 — THE WORLDS WE MAKE</span>
+            <h2>When the ocean<br /><em>meets outer space.</em></h2>
+            <p>
+              In the Dream Drops Crew's shared tale, Sal's ship
+              <strong>Kirni</strong> ends up crash-landing in JD's magical
+              forest. Now imagine that same curious spirit taking the next
+              expedition below the waves, where ancient wonders hide under
+              distant stars.
+            </p>
+            <p>
+              This undersea voyage is a playful website theme, inspired by Sal's
+              love of machines, imagination and the crew's story—not a claim
+              about new story canon.
+            </p>
+            <button class="btn btn-coral" id="mission-btn" type="button">
+              Open the captain's log <span aria-hidden="true">✧</span>
+            </button>
+            <div
+              aria-live="polite"
+              class="mission-log"
+              hidden=""
+              id="mission-log"
+              role="status"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="sal-emote-title"
+        class="sal-emote-teaser"
+        id="emotes"
+      >
+        <div class="container sal-emote-wrap">
+          <div aria-hidden="true" class="sal-emote-illustration">
+            <span class="moon">✦</span>
+            <div class="orca-orbit">
+              <span>✧</span><strong>🐋</strong><span>✶</span>
+            </div>
+            <div class="ripple ripple-one"></div>
+            <div class="ripple ripple-two"></div>
+          </div>
+          <div class="sal-emote-copy">
+            <p class="sal-emote-eyebrow">03 — LITTLE REACTIONS FROM THE DEEP</p>
+            <h2 id="sal-emote-title">Sal's <em>emote cove.</em></h2>
+            <p>
+              Found an expression worth keeping? Explore Sal's animated emotes,
+              preview your favourites, and copy a direct link to share. No
+              login, no fuss — just a little ocean magic.
+            </p>
+            <a class="sal-emote-link" href="/emotes.html"
+              >Explore the emotes <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="streams-section" id="streams">
+        <div class="container">
+          <div class="section-heading streams-header">
+            <div>
+              <span class="section-index">04 — LIVE FROM THE DEEP</span>
+              <h2>Latest <em>livestreams.</em></h2>
+              <p>
+                Up to six of Sal's latest public YouTube livestreams, refreshed
+                automatically when the API is connected.
+              </p>
+            </div>
+            <button
+              class="refresh-button"
+              id="refresh-streams"
+              title="Check YouTube for updates"
+              type="button"
+            >
+              <span aria-hidden="true">↻</span> Refresh feed
+            </button>
+          </div>
+          <div class="stream-status-line">
+            <span aria-hidden="true" class="live-marker"></span
+            ><span id="stream-status" role="status"
+              >Preparing the viewing deck…</span
+            ><span id="stream-updated"></span>
+          </div>
+          <div class="stream-grid" id="stream-grid">
+            <div class="stream-placeholder">
+              <span class="placeholder-icon">✦</span>
+              <h3>Opening the viewing deck</h3>
+              <p>Searching the starlit sea for stories…</p>
+            </div>
+          </div>
+          <div class="stream-footer">
+            <span>WANT TO SEE EVERYTHING?</span
+            ><a
+              href="https://www.youtube.com/@Salahare/streams"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Explore all YouTube streams <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="links-section" id="links">
+        <div class="container">
+          <div class="links-heading">
+            <span class="section-index">05 — KEEP IN TOUCH</span>
+            <h2>Come say <em>hello.</em></h2>
+            <p>
+              Art, gaming and friends—here are the places to find Sal above the
+              waves.
+            </p>
+          </div>
+          <div class="links-layout">
+            <div class="link-list">
+              <a class="creator-link" href="/emotes.html"
+                ><span class="link-icon">✦</span
+                ><span
+                  ><strong>Sal's emotes</strong
+                  ><small>Browse, preview &amp; copy reactions</small></span
+                ><b>↗</b></a
+              >
+              <a
+                class="creator-link"
+                href="https://www.youtube.com/@Salahare"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span class="link-icon">▶</span
+                ><span
+                  ><strong>YouTube</strong
+                  ><small>Livestreams, VODs &amp; adventures</small></span
+                ><b>↗</b></a
+              >
+              <a
+                class="creator-link"
+                href="https://www.twitch.tv/salaharedrawstoo"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span class="link-icon">✧</span
+                ><span
+                  ><strong>Twitch</strong
+                  ><small>Find Sal's creative streams</small></span
+                ><b>↗</b></a
+              >
+              <a
+                class="creator-link"
+                href="https://ko-fi.com/salahare"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span class="link-icon">♡</span
+                ><span
+                  ><strong>Ko-fi</strong
+                  ><small>Support Sal's artwork</small></span
+                ><b>↗</b></a
+              >
+              <a
+                class="creator-link"
+                href="https://ko-fi.com/salahare/commissions"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span class="link-icon">✎</span
+                ><span
+                  ><strong>Art commissions</strong
+                  ><small>Check the current commission page</small></span
+                ><b>↗</b></a
+              >
+              <a
+                class="creator-link"
+                href="https://www.youtube.com/@DreamDropsCrew"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><span class="link-icon">✦</span
+                ><span
+                  ><strong>Dream Drops Crew</strong
+                  ><small>Adventures with the whole crew</small></span
+                ><b>↗</b></a
+              >
+            </div>
+            <aside class="channel-card">
+              <div class="channel-card-top">
+                <span class="card-small-label">FROM THE YOUTUBE CHANNEL</span
+                ><img
+                  alt="YouTube channel profile picture, or the supplied avatar as fallback"
+                  id="youtube-avatar"
+                  loading="lazy"
+                  src="img/favicon.png"
+                />
+              </div>
+              <h3>Sal's corner<br />of the internet.</h3>
+              <p>
+                Connect on YouTube and explore whatever new worlds the crew
+                dreams up next.
+              </p>
+              <a
+                href="https://www.youtube.com/@Salahare"
+                rel="noopener noreferrer"
+                target="_blank"
+                >@Salahare <span aria-hidden="true">↗</span></a
+              >
+              <div class="extra-links" hidden="" id="extra-links">
+                <p>MORE LINKS FROM CHANNEL DESCRIPTION</p>
+                <div id="extra-links-list"></div>
+              </div>
+              <span aria-hidden="true" class="channel-card-star">✧</span>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-row">
+        <a class="footer-brand" href="#top"><span>✧</span> SALAHARE</a>
+        <p>
+          An ocean of ideas, a sky full of stories. <br /><small
+            >Unofficial fan-made creator spotlight · Built with care by
+            <a
+              href="https://www.youtube.com/@PMOG"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Portal Master Of Games</a
+            >.</small
+          >
+        </p>
+        <a class="back-top" href="#top">Back to surface ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>
